@@ -1,0 +1,21 @@
+{
+  "name": "cmc-checker",
+  "version": "0.1.0",
+  "description": "a package that checks if cracked minecraft club minecraft server is online or not ",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run tslint"
+  },
+  "keywords": [
+    "discord",
+    "npm",
+    "minecraft",
+    "minecraft",
+    "server",
+    "cracked",
+    "minecraft",
+    "club"
+  ],
+  "author": "Northern Star",
+  "license": "MIT"
+}
