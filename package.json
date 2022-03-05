@@ -31,6 +31,11 @@
   "dependencies": {
     "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger"
   },
-  "homepage": "https://github.com/Grayson-code/cmc-checker#readme"
+  "homepage": "https://github.com/Grayson-code/cmc-checker#readme",
+  "bugs":{
+    "url" : "https://github.com/Grayson-code/cmc-checker/issues",
+    "email" : "northernstarmusic10@gmail.com"
+  }
+
 
 }
