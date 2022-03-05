@@ -1,5 +1,6 @@
 # cmc-checker
 
+<<<<<<< HEAD
 -[License](./LICENSE)
 
 ## Table of Contents
@@ -38,3 +39,4 @@ Returns A JSON data about the data of the server
 ## Usage <a name = "usage"></a>
 
 You can use this in bots that check the availability of the server and also the data of it.
+
