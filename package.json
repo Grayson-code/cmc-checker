@@ -1,8 +1,8 @@
 {
   "name": "cmc-checker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "a package that checks if cracked minecraft club minecraft server is online or not ",
-  "main": "main.js",
+  "main": "src/main.ts",
   "scripts": {
     "test": "npm run tslint"
   },
@@ -17,5 +17,20 @@
     "club"
   ],
   "author": "Northern Star",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger"
+  },
+  "homepage": "https://github.com/Grayson-code/cmc-checker#readme"
+
 }
