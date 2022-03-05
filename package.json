@@ -4,7 +4,7 @@
   "description": "a package that checks if cracked minecraft club minecraft server is online or not ",
   "main": "src/main.ts",
   "scripts": {
-    "test": "npm run tslint"
+    "test": "eslint src/*"
   },
   "keywords": [
     "discord",

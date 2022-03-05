@@ -6,9 +6,9 @@
 import checker from 'minecraft-pinger'
 
 export interface IOnlineData {
- /**
-       * CMCs Eu Data
-       */
+  /**
+        * CMCs Eu Data
+        */
   eu: {
     /**
      * If eu node is online
@@ -47,7 +47,8 @@ export namespace status {
    * Returns if the server is online and its data
    * @returns {Promise<IOnlineData>}
    * @example
-   * await isOnline()
+   * const data = await isOnline();
+   * console.log(data);
    */
   export async function isOnline () {
     const eu = await checker.pingPromise('mc.crackedminecraft.club', 25565)
