@@ -1,6 +1,6 @@
 # cmc-checker
 
-<<<<<<< HEAD
+
 -[License](./LICENSE)
 
 ## Table of Contents

@@ -1,6 +1,6 @@
 {
   "name": "cmc-checker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a package that checks if cracked minecraft club minecraft server is online or not ",
   "main": "src/main.ts",
   "scripts": {
