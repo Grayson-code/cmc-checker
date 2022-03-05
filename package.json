@@ -26,16 +26,15 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
+    "typedoc": "^0.22.12",
     "typescript": "^4.5.5"
   },
   "dependencies": {
     "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger"
   },
   "homepage": "https://github.com/Grayson-code/cmc-checker#readme",
-  "bugs":{
-    "url" : "https://github.com/Grayson-code/cmc-checker/issues",
-    "email" : "northernstarmusic10@gmail.com"
+  "bugs": {
+    "url": "https://github.com/Grayson-code/cmc-checker/issues",
+    "email": "northernstarmusic10@gmail.com"
   }
-
-
 }

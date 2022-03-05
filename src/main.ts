@@ -4,12 +4,56 @@
 // https://opensource.org/licenses/MIT
 
 import checker from 'minecraft-pinger'
+
+export interface IOnlineData {
+ /**
+       * CMCs Eu Data
+       */
+  eu: {
+    /**
+     * If eu node is online
+     */
+    online: boolean,
+    /**
+     * The latency your getting
+     */
+    ping: number,
+    /**
+     * The Timestamp of function execution in unix timestamp
+     */
+    timestamp: number
+  },
+  /**
+   * AP Nodes Data
+   */
+  ap: {
+    /**
+     * if  ap node is online
+     */
+    online: boolean,
+    /**
+     * The latency your getting
+     */
+    ping: number,
+    /**
+     * The Timestamp of function execution in unix timestamp
+     */
+    timestamp: number
+  }
+}
+
 export namespace status {
+  /**
+   * Returns if the server is online and its data
+   * @returns {Promise<IOnlineData>}
+   * @example
+   * await isOnline()
+   */
   export async function isOnline () {
     const eu = await checker.pingPromise('mc.crackedminecraft.club', 25565)
     const ap = await checker.pingPromise('ind.crackedminecraft.club', 25565)
-    let euOnline: boolean
-    let apOnline: boolean
+    let euOnline!: boolean
+    let apOnline!: boolean
     if (eu.ping) {
       euOnline = true
     }
@@ -43,7 +87,7 @@ export namespace status {
          */
         online: apOnline,
         /**
-         * The latency your gettubg
+         * The latency your getting
          */
         ping: ap.ping,
         /**
