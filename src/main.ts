@@ -2,7 +2,9 @@
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
-
+/**
+ * @author Northern Star
+ */
 import checker from 'minecraft-pinger'
 
 export interface IOnlineData {
@@ -50,6 +52,7 @@ export namespace status {
    * @returns {Promise<IOnlineData>}
    * @example
    * const data = await isOnline();
+   * // Returns The Data which is <IOnlineData>
    * console.log(data);
    */
   export async function isOnline () {
