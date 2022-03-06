@@ -45,6 +45,8 @@ export interface IOnlineData {
 export namespace status {
   /**
    * Returns if the server is online and its data
+   * @since 1.0.0
+   * @category IServer
    * @returns {Promise<IOnlineData>}
    * @example
    * const data = await isOnline();
@@ -80,7 +82,7 @@ export namespace status {
         timestamp: Math.round(new Date().getTime() / 1000)
       },
       /**
-       * AP Nodes Data
+       * CMC AP Nodes Data
        */
       ap: {
         /**
