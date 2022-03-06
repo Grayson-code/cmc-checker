@@ -1,6 +1,6 @@
 {
   "name": "cmc-checker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a package that checks if cracked minecraft club minecraft server is online or not ",
   "main": "src/main.ts",
   "scripts": {
@@ -37,5 +37,9 @@
   "bugs": {
     "url": "https://github.com/Grayson-code/cmc-checker/issues",
     "email": "northernstarmusic10@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Grayson-code/cmc-checker"
   }
 }
