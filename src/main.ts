@@ -20,7 +20,7 @@ export namespace status {
    * const data = await isOnline();
    * // Returns The Data which is <IOnlineData>
    * console.log(data);
-   * // Log the data to see what it is!
+   * // Log the data
    */
   export async function isOnline (): Promise<IOnlineData> {
     const eu = await checker.pingPromise('mc.crackedminecraft.club', 25565)
