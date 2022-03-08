@@ -43,5 +43,8 @@
   "repository": {
     "type": "git",
     "url": "github.com/Grayson-code/cmc-checker"
-  }
+  },
+  "contributors": [
+    "Northern Star <northernstarmusic10@gmail.com>"
+  ]
 }
