@@ -32,9 +32,9 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "ip": "^1.1.5",
     "ip2location-nodejs": "^9.1.0",
-    "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger"
+    "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger",
+    "undici": "^4.15.1"
   },
   "homepage": "https://github.com/Grayson-code/cmc-checker#readme",
   "bugs": {

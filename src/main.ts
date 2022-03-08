@@ -7,15 +7,14 @@
  * @copyright Northern Star // Cracked Minecraft Club
  */
 import checker from 'minecraft-pinger'
-import locationAPI from 'ip2location-nodejs'
+import { fetch } from 'undici'
 import { IOnlineData, ILocationData } from './interfaces'
-import ip from 'ip'
 
 export namespace status {
   /**
    * Returns if the server is online and its data
    * @since 1.0.0
-   * @category IServer
+   * @category Status
    * @returns {Promise<IOnlineDatas>}
    * @example
    * const data = await isOnline();
@@ -23,7 +22,7 @@ export namespace status {
    * console.log(data);
    * // Log the data to see what it is!
    */
-  export async function isOnline ():Promise<IOnlineData> {
+  export async function isOnline (): Promise<IOnlineData> {
     const eu = await checker.pingPromise('mc.crackedminecraft.club', 25565)
     const ap = await checker.pingPromise('ind.crackedminecraft.club', 25565)
     let euOnline!: boolean
@@ -71,31 +70,31 @@ export namespace status {
       }
     }
   }
-  /**
-   * Gives Information about your Internet
-   * @since 1.1.4
-   * @category Data
-   * @returns {Promise<ILocationData>}
-   * @example
-   * // Get The data
-   * const data = await location()
-   * // Log it
-   * console.log(data)
-   */
-  export async function location ():Promise<ILocationData> {
-    const EST = new locationAPI.IP2Location()
-    const data = EST.geoQuery(ip.address(), 100)
-    return {
-      data: {
-        ip: data.ip,
-        city: data.city,
-        zipCode: data.zipCode,
-        timezone: data.timeZone,
-        country: data.countryLong,
-        isp: data.isp,
-        netSpeed: data.netSpeed
-      }
+}
 
-    }
+export namespace client {
+  /**
+  * Gives Information about your Internet
+  * @since 1.1.4
+  * @category Data
+  * @returns {Promise<ILocationData>}
+  * @example
+  * // Get The data
+  * const data = await location()
+  * // Log it
+  * console.log(data)
+  */
+  export async function location (): Promise<ILocationData> {
+    const datas = await fetch('http://ip-api.com/json/')
+    return new Promise((resolve, reject) => {
+      const data: any = datas.json()
+      try {
+        if (data) {
+          resolve(data)
+        }
+      } catch (e) {
+        reject(e)
+      }
+    })
   }
 }

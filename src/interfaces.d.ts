@@ -45,33 +45,60 @@ export interface IOnlineData {
 export interface ILocationData {
     data: {
         /**
-             * Your IP
-             */
-        ip: string | number,
-        /**
-         * Your City
+         * Status of the Request
          */
-        city: string,
+        status: string,
         /**
-         * Your ZIP code
-         */
-        zipCode: string,
-        /**
-         * The Timezone
-         */
-        timezone: any,
-        /**
-         * Your Country
+         * Full Country Name
          */
         country: string,
         /**
-         * Your ISP, or internet service provider
+         * Country Code
+         */
+        countryCode: string,
+        /**
+         * Region or State Code
+         */
+        region: string,
+        /**
+         * Region or State Full name
+         */
+        regionName: string,
+        /**
+         *  The City
+         */
+        city: string,
+        /**
+         * The Zip Code
+         */
+        zip: string,
+        /**
+         * Your latitude
+         */
+        lat: number,
+        /**
+         * Your Longitude
+         */
+        lon: number,
+        /**
+         * Your Timezone
+         */
+        timezone: string,
+        /**
+         * Internet Service Provider
          */
         isp: string,
         /**
-         * Your bandwith speed
+         * Network Organization
          */
-        netSpeed: any,
+        org: string,
+        /**
+         * AS number and organization, separated by space (RIR). Empty for IP blocks not being announced in BGP tables.
+         */
+        as: string,
+        /**
+         * Your IP
+         */
+        query: number,
     }
-
 }
