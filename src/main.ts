@@ -74,7 +74,7 @@ export namespace status {
 
 export namespace client {
   /**
-  * Gives Information about your Internet
+  * Gives Information about your Internet & ISP
   * @since 1.1.4
   * @category Data
   * @returns {Promise<ILocationData>}
