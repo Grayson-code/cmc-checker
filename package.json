@@ -32,7 +32,6 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "ip2location-nodejs": "^9.1.0",
     "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger",
     "undici": "^4.15.1"
   },
