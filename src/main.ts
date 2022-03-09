@@ -5,6 +5,7 @@
 /**
  * @author Northern Star
  * @copyright Northern Star // Cracked Minecraft Club
+ * @license MIT (c) 2022 Northern Star
  */
 import checker from 'minecraft-pinger'
 import { fetch } from 'undici'
