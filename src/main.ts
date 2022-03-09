@@ -9,7 +9,7 @@
  */
 import checker from 'minecraft-pinger'
 import { fetch } from 'undici'
-import { IOnlineData, ILocationData } from './interfaces'
+import { IOnlineData, ILocationData } from '.'
 
 export namespace status {
   /**
