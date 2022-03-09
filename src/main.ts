@@ -35,38 +35,22 @@ export namespace status {
       apOnline = true
     }
     return {
-      /**
-       * CMCs Eu Data
-       */
+
       eu: {
-        /**
-         * If eu node is online
-         */
+
         online: euOnline,
-        /**
-         * The latency your getting
-         */
+
         ping: eu.ping,
-        /**
-         * The Timestamp of function execution in unix timestamp
-         */
+
         timestamp: Math.round(new Date().getTime() / 1000)
       },
-      /**
-       * CMC AP Nodes Data
-       */
+
       ap: {
-        /**
-         * if  ap node is online
-         */
+
         online: apOnline,
-        /**
-         * The latency your getting
-         */
+
         ping: ap.ping,
-        /**
-         * The Timestamp of function execution in unix timestamp
-         */
+
         timestamp: Math.round(new Date().getTime() / 1000)
       }
     }
