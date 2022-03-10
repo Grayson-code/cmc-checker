@@ -29,4 +29,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm start
-    - run: npm package
+    - run: npm run package
