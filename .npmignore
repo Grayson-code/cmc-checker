@@ -8,4 +8,4 @@ docs/
 
 # Testing
 
-src/index.test.ts
+src/main.test.ts
