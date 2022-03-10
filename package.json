@@ -5,7 +5,8 @@
   "main": "src/main.ts",
   "scripts": {
     "test": "eslint src/*",
-    "start": "tsc"
+    "start": "tsc",
+    "package": "node src/index.test"
   },
   "keywords": [
     "discord",
