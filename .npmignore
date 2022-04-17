@@ -9,3 +9,7 @@ docs/
 # Testing
 
 src/main.test.ts
+
+# typescript src
+
+src/main.ts
