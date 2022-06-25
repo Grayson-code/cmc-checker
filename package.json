@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "minecraft-pinger": "github:Grayson-code/node-minecraft-pinger",
-    "undici": "^4.15.1"
+    "undici": "^5.5.1"
   },
   "homepage": "https://github.com/Grayson-code/cmc-checker#readme",
   "bugs": {
